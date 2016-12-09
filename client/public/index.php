@@ -29,10 +29,3 @@ require __DIR__ . '/../src/routes.php';
 // Run app
 $app->run();
 ?>
-
-<html>
-  <head></head>
-  <body>
-    <?php echo $yield ?>
-</body>
-</html>
