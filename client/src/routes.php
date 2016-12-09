@@ -8,3 +8,8 @@ $app->get('/[{name}]', function ($request, $response, $args) {
     // Render index view
     return $this->renderer->render($response, 'index.phtml', $args);
 });
+
+$app = new \Slim\Slim(array(
+    'view' => '\Slim\LayoutView',
+    'layout' => 'layouts/main.php'
+));
