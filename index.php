@@ -17,7 +17,7 @@ $view = $app->view();
 $view->setTemplatesDirectory('views');
 
 $app->get('/', function () use ($app){
-	$app->render('login.php');
+	$app->render('map.html');
 });
 $app->run();
 
