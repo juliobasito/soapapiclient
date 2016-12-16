@@ -12,6 +12,9 @@ $app->get('/getSeeting/:userId', function ($userId) {
 	$seeting = User::getSeeting($userId);
 });
 -----------------------------------------------------*/
+$app->get('/', function () {
+	$app->render('login.php');
+});
 $app->run();
 
 ?>
